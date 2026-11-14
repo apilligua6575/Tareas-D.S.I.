@@ -1,80 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Buzón de Sugerencias</title>
-</head>
-<body>
- 
+  </head>
+  <body>
     <header>
-         <p><a href="/Index.html">Volver al INICIO</a></p>
-        <h1>Hoja de Sugerencias y Comentarios</h1>
-        <p>Tu opinión nos ayuda a mejorar. Por favor, completa el siguiente formulario con tus ideas o recomendaciones.</p>
+      <p><a href="/Index.html">Volver al INICIO</a></p>
+      <h1>Hoja de Sugerencias y Comentarios</h1>
+      <p>
+        Tu opinión nos ayuda a mejorar. Por favor, completa el siguiente
+        formulario con tus ideas o recomendaciones.
+      </p>
     </header>
 
-    <hr> <hr>
+    <hr />
+    <hr />
 
-    <main> 
+    <main>
+      <form>
+        <h2>Datos del visitante</h2>
+        <br />
 
-        <form>
-            
-           
-                <h2>Datos del visitante</h2><br>
-                
-                   <label for="nombre">Nombre completo:</label>
-                   <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
-                   <label for="telefono">Teléfono:</label>
-                   <input type="tel" id="telefono" name="telefono" placeholder="Ej. 0991234567"><br>
-                    <label for="correo">Correo electrónico (opcional):</label>
-                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com"><br>
-                
-            
-                  <hr> <hr>
-            
-           
-                <h2>Detalles de tu sugerencia</h2><br>
-            
-                     <label for="motivo">Tipo de comentario:</label><br>
-                    <select id="motivo" name="motivo" required>
-                        <option value="">-- Selecciona una opción --</option>
-                        <option value="sugerencia">Sugerencia de mejora</option>
-                        <option value="contenido">Solicitar información nueva</option>
-                        <option value="error">Reportar un error</option>
-                        <option value="felicitacion">Felicitación o agradecimiento</option>
-                    </select>
-            
+        <label for="nombre">Nombre completo:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          required
+        /><br />
+        <label for="telefono">Teléfono:</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          placeholder="Ej. 0991234567"
+        /><br />
+        <label for="correo">Correo electrónico (opcional):</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="ejemplo@correo.com"
+        /><br />
 
-                <br>
-                    <h3>¿Cómo calificarías la información de nuestra página?</h3>
-                    <input type="radio" id="excelente" name="calificacion" value="excelente" required>
-                    <label for="excelente">Excelente</label><br>
-                    
-                    <input type="radio" id="buena" name="calificacion" value="buena">
-                    <label for="buena">Buena</label><br>
-                    
-                    <input type="radio" id="regular" name="calificacion" value="regular">
-                    <label for="regular">Regular</label><br>
-                    
-                    <input type="radio" id="mala" name="calificacion" value="mala">
-                    <label for="mala">Necesita mejorar</label>
-                               
-                    <label for="mensaje">Escribe aquí tu sugerencia:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Escribe tu comentario a aquí..." required></textarea><br>
-                
-                    <input type="checkbox" id="respuesta" name="respuesta" value="si">
-                    <label for="respuesta">Deseo recibir una respuesta en mi correo electrónico.</label><br>
-            
-            <button type="submit">Enviar sugerencia</button>
-            <button type="reset">Limpiar</button>
+        <hr />
+        <hr />
 
-        </form>
-       
-        <p>Gracias por tomarte el tiempo de compartir tus sugerencias con nosotros, tu aporte es muy valioso.</p>
-      
-      <hr><hr>
-     </main>
-     <footer>
-     <p>&copy; 2026 Mi Sitio Web. DESARROLLO DE SISTEMAS INFORMATICOS (TI-ON LINE) Todos los derechos reservados.</p>
-</footer>
-</body>
+        <h2>Detalles de tu sugerencia</h2>
+        <br />
+
+        <label for="motivo">Tipo de comentario:</label><br />
+        <select id="motivo" name="motivo" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="sugerencia">Sugerencia de mejora</option>
+          <option value="contenido">Solicitar información nueva</option>
+          <option value="error">Reportar un error</option>
+          <option value="felicitacion">Felicitación o agradecimiento</option>
+        </select>
+
+        <br />
+        <h3>¿Cómo calificarías la información de nuestra página?</h3>
+        <input
+          type="radio"
+          id="excelente"
+          name="calificacion"
+          value="excelente"
+          required
+        />
+        <label for="excelente">Excelente</label><br />
+
+        <input type="radio" id="buena" name="calificacion" value="buena" />
+        <label for="buena">Buena</label><br />
+
+        <input type="radio" id="regular" name="calificacion" value="regular" />
+        <label for="regular">Regular</label><br />
+
+        <input type="radio" id="mala" name="calificacion" value="mala" />
+        <label for="mala">Necesita mejorar</label>
+
+        <label for="mensaje">Escribe aquí tu sugerencia:</label><br />
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="6"
+          cols="50"
+          placeholder="Escribe tu comentario a aquí..."
+          required
+        ></textarea
+        ><br />
+
+        <input type="checkbox" id="respuesta" name="respuesta" value="si" />
+        <label for="respuesta"
+          >Deseo recibir una respuesta en mi correo electrónico.</label
+        ><br />
+
+        <button type="submit">Enviar sugerencia</button>
+        <button type="reset">Limpiar</button>
+      </form>
+
+      <p>
+        Gracias por tomarte el tiempo de compartir tus sugerencias con nosotros,
+        tu aporte es muy valioso.
+      </p>
+
+      <hr />
+      <hr />
+    </main>
+    <footer>
+      <p>
+        &copy; 2026 Mi Sitio Web. DESARROLLO DE SISTEMAS INFORMATICOS (TI-ON
+        LINE) Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
 </html>

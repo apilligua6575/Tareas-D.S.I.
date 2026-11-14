@@ -1,88 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Reporte de Rescate Animal</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-          <a href="/Index.html">Volver al INICIO</a> | 
-            <a href="/carpeta2/sugerencias.html">Ir a Sugerencias</a>
-       
-        <h1>Hoja de Reporte y Rescate </h1>
-        <p>Utiliza este formulario para reportar un animal doméstico abandonado, herido o un animal salvaje que pueda ser un peligro.</p>
+      <a href="/Index.html">Volver al INICIO</a> |
+      <a href="/carpeta2/sugerencias.html">Ir a Sugerencias</a>
+
+      <h1>Hoja de Reporte y Rescate</h1>
+      <p>
+        Utiliza este formulario para reportar un animal doméstico abandonado,
+        herido o un animal salvaje que pueda ser un peligro.
+      </p>
     </header>
-<hr> <hr>
-    
+    <hr />
+    <hr />
+
     <main>
-                    <!-- BLOQUE 1: DATOS DE QUIEN REPORTA -->
-           
-                <h2>1. Datos de la persona que reporta</h2>
-               
-                    <label for="reportante">Nombre completo:</label><br>
-                    <input type="text" id="reportante" name="reportante" placeholder="Escribe tu Nombre" required><br>
-                
-                    <label for="telefono">Teléfono (urgencias):</label><br>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 0991234567" required><br>
-              
-                    <label for="fecha">Fecha y hora del avistamiento:</label><br>
-                    <input type="datetime-local" id="fecha" name="fecha" required><br>
+      <!-- BLOQUE 1: DATOS DE QUIEN REPORTA -->
 
-            <!-- BLOQUE 2: UBICACIÓN DEL RESCATE -->
-            
-                <h2>2. Ubicación exacta del animal</h2>
-            
-                    <label for="ciudad">Ciudad, Parroquia o Sector:</label><br>
-                    <input type="text" id="ciudad" name="ciudad" size="40" placeholder="Ej. Centro, Parque principal, Vía rural..." required><br>
-                
-                    <label for="direccion">Una Referencias Valida:</label><br>
-                    <textarea id="direccion" name="direccion" rows="3" cols="50" placeholder="Calle principal, intersección, color de casa o punto de referencia cercano..." required></textarea><br>
-                
-            <!-- BLOQUE 3: DATOS Y ESTADO DEL ANIMAL -->
-            
-                <h2>3. Información y estado del animal</h2>
-                    <p><b>Clasificación del animal: </b></p>
-                    <input type="radio" id="domestico" name="clasificacion" value="domestico" required>
-                    <label for="domestico">Animal doméstico (perro, gato, ave de corral, etc.)</label><br>
-                    
-                    <input type="radio" id="salvaje" name="clasificacion" value="salvaje">
-                    <label for="salvaje">Animal salvaje o silvestre (zarigüeya, serpiente, ave silvestre, etc.)</label><br><br>
-               
-                    <label for="especie">Especie o descripción física:</label><br>
-                    <input type="text" id="especie" name="especie" placeholder="Ej. Perro mediano color café, zarigüeya adulta..." required><br><br>
-                                
-                    <label for="urgencia">Nivel de urgencia:</label><br>
-                    <select id="urgencia" name="urgencia" required><br><br>
-                        <option value="">-- Selecciona el estado del animal --</option>
-                        <option value="critico">Crítico (atropellado, sangrando o inconsciente)</option>
-                        <option value="herido">Herido leve o atrapado sin poder salir</option>
-                        <option value="peligro">En zona de peligro (autopista, cables, zona urbana)</option>
-                        <option value="abandono">Abandonado o perdido (aparentemente sano)</option>
-                   
-                    </select>
-            <br><br>
+      <h2>1. Datos de la persona que reporta</h2>
 
-                    <label for="detalles">Detalles adicionales de la situación:</label><br>
-                    <textarea id="detalles" name="detalles" rows="5" cols="50" placeholder="Describe si el animal es agresivo, si tiene crías, si lleva collar o cómo ocurrió el accidente..." required></textarea><br>
-                                
-                    <input type="checkbox" id="resguardo" name="resguardo" value="si">
-                    <label for="resguardo">El animal está temporalmente bajo resguardo seguro mientras llega ayuda.</label><br>
-                
-            <br>
+      <label for="reportante">Nombre completo:</label><br />
+      <input
+        type="text"
+        id="reportante"
+        name="reportante"
+        placeholder="Escribe tu Nombre"
+        required
+      />
+      <br />
+      <br />
+      <label for="telefono">Teléfono (urgencias):</label><br />
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        placeholder="Ej. 0991234567"
+        required
+      />
 
-            <button type="submit">Enviar Reporte</button>
-            <button type="reset">Borrar Reporte</button>
+      <p>
+        <label for="fecha">Fecha y hora del avistamiento:</label><br />
+        <input type="datetime-local" id="fecha" name="fecha" required /><br />
+      </p>
+      <!-- BLOQUE 2: UBICACIÓN DEL RESCATE -->
 
-        <p><strong>Nota Importante:</strong> Si se trata de un animal salvaje herido o peligroso, mantén una distancia segura y no intentes manipularlo sin equipo adecuado.</p>
+      <h2>2. Ubicación exacta del animal</h2>
 
-        </main>
+      <label for="ciudad">Ciudad, Parroquia o Sector:</label><br />
+      <input
+        type="text"
+        id="ciudad"
+        name="ciudad"
+        placeholder="Ej. Centro, Parque principal, Vía rural..."
+        required
+      /><br />
+      <p>
+        <label for="direccion">Una Referencias Valida:</label><br />
+        <textarea
+          id="direccion"
+          name="direccion"
+          rows="3"
+          cols="50"
+          placeholder="Calle principal, intersección, color de casa o punto de referencia cercano..."
+          required
+        ></textarea
+        ><br />
+      </p>
+      <!-- BLOQUE 3: DATOS Y ESTADO DEL ANIMAL -->
 
-    <hr> <hr>
+      <h2>3. Información y estado del animal</h2>
+      <p><b>Clasificación del animal: </b></p>
+      <input
+        type="radio"
+        id="domestico"
+        name="clasificacion"
+        value="domestico"
+        required
+      />
+      <label for="domestico"
+        >Animal doméstico (perro, gato, ave de corral, etc.)</label
+      ><br />
+      <p>
+        <input type="radio" id="salvaje" name="clasificacion" value="salvaje" />
+        <label for="salvaje"
+          >Animal salvaje o silvestre (zarigüeya, serpiente, ave silvestre,
+          etc.)</label
+        ><br />
+      </p>
+      <label for="especie">Especie o descripción física:</label><br />
+      <input
+        type="text"
+        id="especie"
+        name="especie"
+        placeholder="Ej. Perro mediano color café, zarigüeya adulta..."
+        required
+      /><br />
+      <br />
+      <p>
+        <label for="urgencia">Nivel de urgencia:</label><br />
+        <select id="urgencia" name="urgencia" required>
+          <option value="">-- Selecciona el estado del animal --</option>
+          <option value="critico">
+            Crítico (atropellado, sangrando o inconsciente)
+          </option>
+          <option value="herido">Herido leve o atrapado sin poder salir</option>
+          <option value="peligro">
+            En zona de peligro (autopista, cables, zona urbana)
+          </option>
+          <option value="abandono">
+            Abandonado o perdido (aparentemente sano)
+          </option>
+        </select>
+      </p>
+      <br />
+      <p>
+        <label for="detalles">Detalles adicionales de la situación:</label
+        ><br />
+        <textarea
+          id="detalles"
+          name="detalles"
+          rows="5"
+          cols="50"
+          placeholder="Describe si el animal es agresivo, si tiene crías, si lleva collar o cómo ocurrió el accidente..."
+          required
+        ></textarea>
+        <br />
+
+        <input type="checkbox" id="resguardo" name="resguardo" value="si" />
+        <label for="resguardo"
+          >El animal está temporalmente bajo resguardo seguro mientras llega
+          ayuda.</label
+        ><br />
+      </p>
+      <br />
+
+      <button type="submit">Enviar Reporte</button>
+      <button type="reset">Borrar Reporte</button>
+
+      <p>
+        <strong>Nota Importante:</strong> Si se trata de un animal salvaje
+        herido o peligroso, mantén una distancia segura y no intentes
+        manipularlo sin equipo adecuado.
+      </p>
+    </main>
+
+    <hr />
+    <hr />
 
     <footer>
-           <p>&copy; 2026 Mi Sitio Web. DESARROLLO DE SISTEMAS INFORMATICOS (TI-ON LINE) Todos los derechos reservados.</p>
+      <p>
+        &copy; 2026 Mi Sitio Web. DESARROLLO DE SISTEMAS INFORMATICOS (TI-ON
+        LINE) Todos los derechos reservados.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
